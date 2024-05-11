@@ -1,0 +1,35 @@
+This Project is a Library Management System.
+It is not complete and therefore is only capable of doing a simple
+for the already existing books. In addition, a user can sign-up once
+and then Log in to the library anytime through the localhost.
+
+
+The following or the steps need to be taken to run this
+program locally:
+
+1. In this step, you need to run the main.py program which 
+then it will give you the link to local host which probably 
+is localhost: 127.0.0.1 with the port number 5000.
+	However you can this program through the terminal too by 
+	going to the terminal of the IDE and getting to the directory
+	of this project in you computer and then follow the following
+	commands:
+		export FLASK_APP=main.py
+		flask run
+
+2. In the second step once you executed the program, open the
+local host link in a browser in which you will get the Login 
+and Sign-up page. 
+
+3. Go to sign-up page and sign-up with new credentials once 
+you do so successfully then you will be taken to the home page.
+
+4. In the home page you can search the names of the following books:
+Long Walk To Freedom,
+Born A Crime,
+Go To Dinners,
+Atomic Habits,
+Get out Your Head,
+The Silk Roads
+These books also exist on the Catalogue and Search page
+When the search is successfull, you will be taken to the Book details page.

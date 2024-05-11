@@ -1,0 +1,35 @@
+
+{% block title %}Book Details{% endblock %}
+
+{% block content %}
+
+        <div class="book-features">
+       <h2>{{ book.title }}</h2>
+                <ul>
+                     <li>
+                        <strong>Author:</strong> {{ book.author }}
+                     </li>
+                     <li>
+                        <strong>Publication Date:</strong> {{ book.publication_date }}
+                     </li>
+                     <li>
+                        <strong>Genre:</strong> {{ book.genre }}
+                     </li>
+                     <li>
+                         <strong>Description:</strong> {{ book.description }}
+                     </li>
+                     <li>
+                        <strong>Availability:</strong> {{ book.availability }}
+                     </li>
+
+                </ul>
+       </div>
+    <section class="section-1">
+        <div class="submit-btn">
+            <button type="submit" name="search" class="search-btn">
+                <a href="{{ url_for('views.home') }}" class="btn">Return To Home Page</a>
+            </button>
+        </div>
+    </section>
+
+{% endblock %}

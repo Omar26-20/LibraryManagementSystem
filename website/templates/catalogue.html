@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block title %}Catalog & Search{% endblock %}
+
+{% block content %}
+    <style>
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .book {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .book .info {
+            margin-top: 20px;
+        }
+
+        .book h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .book ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .book li {
+            margin-bottom: 10px;
+        }
+
+        .book li strong {
+            font-weight: bold;
+        }
+
+    </style>
+
+        <h1>Library Catalog</h1>
+        <div class="book-list">
+            {% for book in books %}
+            <div class="book">
+                <--! <img src="" alt="Book Cover"> -->
+                <div class="info">
+
+                <h2>{{ book.title }}</h2>
+                <ul>
+                     <li>
+                        <strong>Author:</strong> {{ book.author }}
+                     </li>
+                     <li>
+                        <strong>Publication Date:</strong> {{ book.publication_date }}
+                     </li>
+                     <li>
+                        <strong>Genre:</strong> {{ book.genre }}
+                     </li>
+                     <li>
+                         <strong>Description:</strong> {{ book.description }}
+                     </li>
+                     <li>
+                        <strong>Availability:</strong> {{ book.availability }}
+                     </li>
+
+                </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    <footer>
+        &copy; 2024 Library Management System
+    </footer>
+{% endblock %}

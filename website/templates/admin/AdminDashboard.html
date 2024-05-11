@@ -1,0 +1,95 @@
+{% extends 'admin/master.html' %}
+
+{% block content %}
+
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Admin section styles */
+        .admin-section {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        .admin-section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+    </style>
+    <header>
+        <h1>Administrator Dashboard</h1>
+    </header>
+    <div class="admin-section">
+        <h2>Admin Profile</h2>
+        <p>Name</p>
+        <p>Age</p>
+        <p>Occupation</p>
+    </div>
+    <div class="admin-section">
+        <h2>Manage Books</h2>
+        <!-- Actions -->
+        <p>Add</p>
+        <p>Edit</p>
+        <p>Delete</p>
+    </div>
+    <div>
+    <div class="admin-section">
+        <h2>Manage User Accounts</h2>
+    <!-- Actions -->
+        <p>Edit Users</p>
+        <p>Delete</p>
+        </div>
+    <div class="admin-section">
+        <h2>Manage Holds</h2>
+        <!-- Actions -->
+        <p>Edit Users</p>
+        <p>Delete</p>
+    </div>
+    <div class="admin-section">
+        <h2>Manage Fines</h2>
+        <!-- Actions -->
+        <p>Edit Users</p>
+        <p>Delete</p>
+    </div>
+
+    </div>
+
+
+    <footer>
+        <!-- in this section add: copyright information and links to other pages-->
+    </footer>
+
+{% endblock %}

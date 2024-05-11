@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+    <h1 align="center">This is the Home Page</h1>
+
+    <form action="{{ url_for('views.search_form') }}" method="GET">
+        <div align="center" class="form-group">
+                <label align="center" for="query">Search Book</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="query"
+                    name="query"
+                    placeholder="Enter Book Name"
+                    />
+            </div>
+            <br />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+{% endblock %}
